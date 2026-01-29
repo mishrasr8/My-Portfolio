@@ -73,6 +73,3 @@ The website is designed to be modern, responsive, and recruiter-friendly, with s
   - Matrix Converter Simulation (MATLAB/Simulink)
 
 ---
-
-## 📂 Project Structure
-
