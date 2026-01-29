@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Suyash Mishra</title>
+  <link rel="icon" href="Profile pic.jpg" type="image/png">
+
+  <!-- Iconify Icons -->
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js" src="theme.js"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Style Sheet -->
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <nav>
+    <strong>My Portfolio Site</strong>
+    <div style="display:flex;align-items:center;gap:1rem">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" aria-label="Toggle theme" style="background:#020617;border:1px solid #1e293b;color:#e5e7eb;border-radius:999px;padding:0.4rem 0.7rem;cursor:pointer">🌙</button>
+    </div>
+  </nav>
+
+  <header class="hero">
+  <div class="hero-container">
+    <div class="hero-profile">
+      <img src="Profile pic.jpg" alt="Profile photo" class="hero-avatar" />
+      <div class="hero-meta">
+        <h1>Suyash Mishra</h1>
+        <p class="hero-role">Electrical Engineer • Programmer • Web Developer</p>
+        <div class="hero-socials">
+          <a href="#" aria-label="Email"><span class="iconify" data-icon="mdi:email"></span></a>
+          <a href="https://github.com/mishrasr8" aria-label="GitHub"><span class="iconify" data-icon="mdi:github"></span></a>
+          <a href="https://www.linkedin.com/in/suyashrmishra/" aria-label="LinkedIn"><span class="iconify" data-icon="mdi:linkedin"></span></a>
+          <!-- <a href="#" aria-label="X"><span class="iconify" data-icon="mdi:twitter"></span></a> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-about" style="margin-top:2rem">
+      <h2 style="margin-bottom:1.5rem">About</h2>
+      <p>
+        I'm an Electrical Engineering student with a strong interest in software development,
+        Generative AI, and building end-to-end systems. I enjoy working across frontend,
+        backend, and applied AI, learning by doing, and turning ideas into practical,
+        real-world solutions.
+      </p>
+    </div>
+  </div>
+</header>
+
+  <section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skill-tabs">
+    <button class="tab active" onclick="filterSkills('all')">All Skills</button>
+    <button class="tab" onclick="filterSkills('frontend')">Frontend Development</button>
+    <button class="tab" onclick="filterSkills('backend')">Backend & Programming</button>
+    <button class="tab" onclick="filterSkills('ai')">AI & Applied ML</button>
+    <button class="tab" onclick="filterSkills('cloud')">Cloud & Infrastructure</button>
+    <button class="tab" onclick="filterSkills('database')">Database</button>
+    <button class="tab" onclick="filterSkills('eee')">Electrical & Electronics</button>
+    <button class="tab" onclick="filterSkills('tools')">Tools & Productivity</button>
+  </div>
+
+  <div class="skill-grid">
+    <!-- Frontend Development -->
+    <span class="skill-pill frontend"><span class="iconify" data-icon="logos:html-5"></span> HTML</span>
+    <span class="skill-pill frontend"><span class="iconify" data-icon="logos:css-3"></span> CSS</span>
+    <span class="skill-pill frontend"><span class="iconify" data-icon="logos:javascript"></span> JavaScript</span>
+    <span class="skill-pill frontend"><span class="iconify" data-icon="logos:bootstrap"></span> Bootstrap</span>
+    <span class="skill-pill frontend"><span class="iconify" data-icon="logos:figma"></span> Figma</span>
+    <span class="skill-pill frontend"><span class="iconify" data-icon="mdi:palette"></span> Canva</span>
+
+    <!-- Backend & Programming -->
+    <span class="skill-pill backend"><span class="iconify" data-icon="logos:python"></span> Python</span>
+    <span class="skill-pill backend"><span class="iconify" data-icon="logos:c-plusplus"></span> C++</span>
+    <span class="skill-pill backend"><span class="iconify" data-icon="mdi:code-braces"></span> OOP</span>
+    <span class="skill-pill backend"><span class="iconify" data-icon="mdi:graph"></span> Data Structures</span>
+    <span class="skill-pill backend"><span class="iconify" data-icon="mdi:lightbulb-on"></span> Problem Solving</span>
+
+    <!-- Electrical & Electronics -->
+    <span class="skill-pill eee"><span class="iconify" data-icon="mdi:chip"></span> Embedded Systems</span>
+    <span class="skill-pill eee"><span class="iconify" data-icon="mdi:sensor"></span> Sensors</span>
+    <span class="skill-pill eee"><span class="iconify" data-icon="mdi:circuit"></span> Circuit Design</span>
+
+     <!-- AI & Applied ML -->
+    <span class="skill-pill ai"><span class="iconify" data-icon="mdi:brain"></span> Generative AI</span>
+    <span class="skill-pill ai"><span class="iconify" data-icon="mdi:brain"></span> Agentic AI</span>
+    <span class="skill-pill ai"><span class="iconify" data-icon="mdi:face-recognition"></span> Hugging Face</span>
+    <span class="skill-pill ai"><span class="iconify" data-icon="mdi:robot"></span> Gradio</span>
+    <span class="skill-pill ai"><span class="iconify" data-icon="logos:google"></span> Google Colab</span>
+    <span class="skill-pill ai"><span class="iconify" data-icon="simple-icons:ibmwatson"></span> Watson AI</span>
+    <span class="skill-pill ai"><span class="iconify" data-icon="simple-icons:ibm"></span> Watson Studio</span>
+    <span class="skill-pill ai"><span class="iconify" data-icon="mdi:graph-outline"></span> Langflow</span>
+    <span class="skill-pill ai"><span class="iconify" data-icon="mdi:database-search"></span> RAG</span>
+
+    <!-- Cloud & Infrastructure -->
+    <span class="skill-pill cloud"><span class="iconify" data-icon="logos:git-icon"></span> Git</span>
+    <span class="skill-pill cloud"><span class="iconify" data-icon="logos:github-icon"></span> GitHub</span>
+
+    <!-- Database -->
+    <span class="skill-pill database"><span class="iconify" data-icon="mdi:database"></span> SQL</span>
+
+    <!-- Tools & Productivity -->
+    <span class="skill-pill tools"><span class="iconify" data-icon="logos:matlab"></span> MATLAB</span>
+    <span class="skill-pill tools"><span class="iconify" data-icon="mdi:chart-line"></span> Simulink</span>
+    <span class="skill-pill tools"><span class="iconify" data-icon="mdi:sine-wave"></span> SPWM</span>
+    <span class="skill-pill tools"><span class="iconify" data-icon="mdi:microsoft-office"></span> MS Office</span>
+  </div>
+</section>
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3><span class="iconify" data-icon="mdi:shield-lock"></span> Anti-Theft Bag for Public Transportation</h3>
+      <p><strong>Achievement:</strong> 2nd Runner-Up – Phase Shift 2025</p>
+      <p>
+        Designed an embedded security system using sensors to detect unauthorized access.
+        Implemented real-time alert mechanisms with alarm circuits to enhance commuter safety.
+        Focused on practical product design, sensor integration, and rapid prototyping.
+      </p>
+      <div class="project-skills">
+        <span class="skill-pill eee"><span class="iconify" data-icon="mdi:chip"></span> Embedded Systems</span>
+        <span class="skill-pill eee"><span class="iconify" data-icon="mdi:sensor"></span> Sensors</span>
+        <span class="skill-pill eee"><span class="iconify" data-icon="mdi:circuit"></span> Circuit Design</span>
+        <span class="skill-pill backend"><span class="iconify" data-icon="mdi:lightbulb-on"></span> Problem Solving</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3><span class="iconify" data-icon="mdi:thermometer"></span> Analog Temperature Monitoring Circuit</h3>
+      <p>
+        Built an analog temperature monitoring and control circuit using op-amps and MOSFETs.
+        Implemented comparator-based threshold switching for real-time temperature regulation.
+        Gained hands-on experience in troubleshooting and system integration.
+      </p>
+      <div class="project-skills">
+        <span class="skill-pill eee"><span class="iconify" data-icon="mdi:circuit"></span> Analog Electronics</span>
+        <span class="skill-pill eee"><span class="iconify" data-icon="mdi:flash"></span> Power Electronics</span>
+        <span class="skill-pill eee"><span class="iconify" data-icon="mdi:sensor"></span> Sensors</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3><span class="iconify" data-icon="mdi:sine-wave"></span> Matrix Converter Frequency Simulation</h3>
+      <p>
+        Developed a MATLAB/Simulink model of a single-phase matrix converter for direct AC–AC
+        frequency conversion without a DC link. Used SPWM with dead time to generate
+        symmetrical output waveforms and analyzed THD performance.
+      </p>
+      <div class="project-skills">
+        <span class="skill-pill tools"><span class="iconify" data-icon="logos:matlab"></span> MATLAB</span>
+        <span class="skill-pill tools"><span class="iconify" data-icon="mdi:chart-line"></span> Simulink</span>
+        <span class="skill-pill tools"><span class="iconify" data-icon="mdi:sine-wave"></span> SPWM</span>
+        <span class="skill-pill eee"><span class="iconify" data-icon="mdi:flash"></span> Power Electronics</span>
+      </div>
+    </div>
+    
+    <div class="card">
+      <h3><span class="iconify" data-icon="mdi:heart-pulse"></span> Health Analyst : AI-Based Preventive Health Risk Assessment</h3>
+      <p>
+        Developed an agentic AI system focused on preventive healthcare by analyzing lifestyle data such as
+        physical activity, sleep patterns, diet, and stress levels. The system identifies early risk patterns
+        and provides assistive, evidence-based insights to encourage healthier lifestyle choices without
+        performing medical diagnosis.
+      </p>
+      <p>
+        Built using LangFlow and IBM Granite, the solution leverages Retrieval-Augmented Generation (RAG)
+        with preventive healthcare guidelines to generate reliable and contextual recommendations.
+      </p>
+      <div class="project-skills">
+        <span class="skill-pill ai"><span class="iconify" data-icon="mdi:brain"></span> Generative AI</span>
+        <span class="skill-pill ai"><span class="iconify" data-icon="mdi:graph-outline"></span> LangFlow</span>
+        <span class="skill-pill ai"><span class="iconify" data-icon="simple-icons:ibmwatson"></span> IBM Granite</span>
+        <span class="skill-pill ai"><span class="iconify" data-icon="mdi:database-search"></span> RAG</span>
+        <span class="skill-pill backend"><span class="iconify" data-icon="mdi:chart-line"></span> Data Analysis</span>
+      </div>
+      <div style="margin-top:1rem">
+        <a href="https://github.com/mishrasr8/Health-Analyst"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="github-btn">
+          <span class="iconify" data-icon="mdi:github"></span>
+          View on GitHub
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3><span class="iconify" data-icon="mdi:library"></span> Library Management System: C++ Console Application</h3>
+      <p>
+        Developed a C++ console-based application to manage core library operations including book inventory
+        management, book donations, lending, and returns. The system tracks available copies of each book
+        and maintains borrower records to ensure a user cannot borrow the same book more than once at a time.
+      </p>
+      <p>
+        Donor information is recorded for donated books, and efficient data handling is achieved using
+        STL containers such as <code>unordered_map</code> and <code>vector</code>. The project follows
+        object-oriented design principles for modularity and maintainability.
+      </p>
+    <div class="project-skills">
+      <span class="skill-pill backend"><span class="iconify" data-icon="logos:c-plusplus"></span> C++</span>
+      <span class="skill-pill backend"><span class="iconify" data-icon="mdi:code-braces"></span> OOP</span>
+      <span class="skill-pill backend"><span class="iconify" data-icon="mdi:database"></span> STL (unordered_map, vector)</span>
+      <span class="skill-pill backend"><span class="iconify" data-icon="mdi:lightbulb-on"></span> Problem Solving</span>
+      <span class="skill-pill backend"><span class="iconify" data-icon="mdi:graph"></span> Data Structures</span>
+    </div>
+      <div style="margin-top:1rem">
+        <a href="https://github.com/mishrasr8/Library-Management-System/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="github-btn">
+          <span class="iconify" data-icon="mdi:github"></span>
+          View on GitHub
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+</div>
+
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="card edu-card">
+    <h3><span class="iconify" data-icon="mdi:school"></span> B.M.S. College of Engineering, Bangalore</h3>
+    <p>Bachelor of Engineering – Electrical & Electronics Engineering</p>
+    <span class="edu-year">2023 – 2027</span>
+  </div>
+
+  <div class="card edu-card">
+    <h3><span class="iconify" data-icon="mdi:school-outline"></span> J.N.V. Sili, Silvassa</h3>
+    <p>Senior Secondary & Secondary School (CBSE)</p>
+    <span class="edu-year">2020 – 2022</span>
+  </div>
+</section>
+<script src="app.js"></script>
+
+</body>
+</html>
