@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anti-Theft Bag | Suyash Mishra</title>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <strong><a href="index.html" style="color:#e5e7eb;text-decoration:none">My Portfolio Site</a></strong>
+    <div style="display:flex;align-items:center;gap:1rem">
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#education">Education</a>
+      <button id="themeToggle" aria-label="Toggle theme" style="background:#020617;border:1px solid #1e293b;color:#e5e7eb;border-radius:999px;padding:0.4rem 0.7rem;cursor:pointer">🌙</button>
+    </div>
+  </nav>
+
+  <div class="project-hero">
+    <a href="index.html#projects" class="back-btn">← Back to Projects</a>
+    <div class="project-badge">🥉 2nd Runner-Up – Phase Shift 2025</div>
+    <h1><span class="iconify" data-icon="mdi:shield-lock"></span> Anti-Theft Bag for Public Transportation</h1>
+    <p class="subtitle">An embedded security system that detects unauthorized access and triggers real-time alerts to protect commuters in public transport.</p>
+    <div class="tech-stack-grid">
+      <span class="skill-pill eee"><span class="iconify" data-icon="mdi:chip"></span> Embedded Systems</span>
+      <span class="skill-pill eee"><span class="iconify" data-icon="mdi:sensor"></span> Sensors</span>
+      <span class="skill-pill eee"><span class="iconify" data-icon="mdi:circuit"></span> Circuit Design</span>
+      <span class="skill-pill backend"><span class="iconify" data-icon="mdi:lightbulb-on"></span> Problem Solving</span>
+    </div>
+  </div>
+
+  <section class="detail-section" style="padding-top:1rem">
+    <h2>Project Overview</h2>
+    <p>
+      The Anti-Theft Bag is an embedded hardware solution designed to tackle the growing problem of theft in public transportation systems. By integrating sensors directly into a bag, the system detects any unauthorized access attempts and immediately triggers alert mechanisms, giving the owner real-time notification.
+    </p>
+    <p>
+      This project was built and presented at <strong>Phase Shift 2025</strong>, where it was awarded <strong>2nd Runner-Up</strong> among competing engineering teams — validating its real-world impact and technical execution.
+    </p>
+  </section>
+
+  <div class="project-detail-grid">
+    <section class="card" style="opacity:1;transform:none">
+      <h3 style="color:#38bdf8;margin-bottom:1rem"><span class="iconify" data-icon="mdi:target"></span> Problem Statement</h3>
+      <p>Theft in crowded public transport (buses, metros, trains) is a widespread issue that often goes undetected due to the busy environment. Traditional bags offer no security feedback to the owner when tampered with.</p>
+    </section>
+
+    <section class="card" style="opacity:1;transform:none">
+      <h3 style="color:#38bdf8;margin-bottom:1rem"><span class="iconify" data-icon="mdi:lightbulb-on-outline"></span> Our Solution</h3>
+      <p>An embedded system inside the bag that monitors zipper/flap movement via sensors, triggering an audible alarm and/or notification whenever unauthorized access is detected — instantly alerting the owner.</p>
+    </section>
+  </div>
+
+  <section class="detail-section">
+    <h2>Key Features</h2>
+    <ul>
+      <li>Real-time sensor detection of bag opening attempts</li>
+      <li>Audible alarm circuit triggered on unauthorized access</li>
+      <li>Low power consumption — suitable for portable use</li>
+      <li>Compact and discreet design — embedded within the bag structure</li>
+      <li>Rapid prototyping approach with iterative sensor tuning</li>
+      <li>Designed for robustness in crowded, high-vibration environments</li>
+    </ul>
+  </section>
+
+  <section class="detail-section">
+    <h2>Technical Implementation</h2>
+    <div class="highlight-box">
+      <h4><span class="iconify" data-icon="mdi:chip"></span> Embedded System Architecture</h4>
+      <p>The system uses microcontroller-based logic to continuously poll sensor states. Upon detection of a threshold breach (bag being opened), the firmware triggers the alarm circuit within milliseconds.</p>
+    </div>
+    <div class="highlight-box">
+      <h4><span class="iconify" data-icon="mdi:sensor"></span> Sensor Integration</h4>
+      <p>Carefully selected sensors were integrated at critical access points of the bag. Threshold tuning was done empirically to minimize false positives while ensuring high sensitivity to genuine access attempts.</p>
+    </div>
+    <div class="highlight-box">
+      <h4><span class="iconify" data-icon="mdi:circuit"></span> Alarm Circuit</h4>
+      <p>The alert mechanism uses a dedicated alarm circuit designed to produce a loud, attention-grabbing alert. The circuit was tested across different power conditions to ensure consistent performance.</p>
+    </div>
+  </section>
+
+  <section class="detail-section">
+    <h2>Learnings & Outcomes</h2>
+    <ul>
+      <li>Gained hands-on experience with sensor selection and calibration</li>
+      <li>Developed skills in rapid hardware prototyping under competition constraints</li>
+      <li>Learned to balance sensitivity, power consumption, and form factor</li>
+      <li>Strengthened ability to present and pitch technical solutions to judges</li>
+      <li>Awarded 2nd Runner-Up at Phase Shift 2025 — an inter-college technical fest</li>
+    </ul>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
